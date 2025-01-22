@@ -8,5 +8,10 @@ fetch テスト
 テストです
 push時のエラーを再現
 
+<<<<<<< Updated upstream
 
 エラー起こします
+=======
+上書き
+上書き
+>>>>>>> Stashed changes
