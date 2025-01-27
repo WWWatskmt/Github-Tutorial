@@ -7,6 +7,10 @@ a の各要素から b の各要素を引いた結果 (a_1 - b_1, a_2 - b_2, ...
 
 int main()
 {
+    int N;
 
+    scanf("%d" , &N);
+
+    
     return 0;
 }
