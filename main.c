@@ -11,7 +11,7 @@ int main()
     
     scanf("%d", &n);
 
-    int a[n], b[n];
+    int a[100], b[100];
 
     for (int i=0; i<n; i++) {
         scanf("%d", &a[i]);
