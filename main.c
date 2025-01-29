@@ -7,11 +7,23 @@ a の各要素から b の各要素を引いた結果 (a_1 - b_1, a_2 - b_2, ...
 
 int main()
 {
-    int n:
+    int n;
     int a[100], b[100];
 
-    scanf("%d\n",&n);
+    scanf("%d",&n);
 
+
+
+    for (int i = 0; i < n; i++) {
+            scanf("%d", &a[i]);
+    }
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &b[i]);
+    }
+
+    
+}
     
     
     return 0;
