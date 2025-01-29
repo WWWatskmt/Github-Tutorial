@@ -11,6 +11,18 @@ int main()
 
     scanf("%d" , &N);
 
-    
+    int a[N], b[N];
+
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &b[i]);
+    }
+
+    for (int i = 0; i < N; i++) {
+        if (a[i] != b[i])
+    }
     return 0;
 }
