@@ -10,9 +10,21 @@ int main()
         int N;
 
         printf("長さNの数値を入力してください");
-        scanf("%d" &N);
+        scanf("%d", &N);
 
-        int a[N] b[N];
+        int a[10], b[10];
 
+        for (int i = 0; i < N; i++){
+        if (a[N] > b[N]){
+            printf("a[%d] (%d) は b[%d] (%d) より大きい\n", i, a[N], i, b[N]);
+        } 
+        else if (a[N] < b[N]){
+            printf("a[%d] (%d) は b[%d] (%d) より小さい\n", i, a[N], i, b[N]);
+        } 
+        else{
+            printf("a[%d] (%d) は b[%d] (%d) と等しい\n", i, a[N], i, b[N]);
+        }
+        }
         return 0;
+
 }
