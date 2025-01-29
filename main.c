@@ -22,9 +22,13 @@ int main()
     }
 
     for(int i=0; i<n; i++){
-        if(a[i] != b[i])
-        printf("%d\n", a[i] - b[i]);
+        if(a[i] != b[i]){
+            printf("違います");
+            return 0;
+        }
     }
+
+    printf("同じです");
 
     return 0;
 }
