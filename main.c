@@ -22,8 +22,20 @@ int main()
         scanf("%d", &b[i]);
     }
 
-    
-}
+    int comparison = 1;
+    for (int i = 0; i < n; i++) {
+        if (a[i] != b[i]) {
+            comparison = 0;
+            break;
+        }
+    }
+
+    if (comparison) {
+        printf("同じです\n");
+    } else {
+        printf("違います\n");
+    }
+
     
     
     return 0;
