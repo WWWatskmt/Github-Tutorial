@@ -7,9 +7,9 @@ a の各要素から b の各要素を引いた結果 (a_1 - b_1, a_2 - b_2, ...
 
 int main()
 {
-    int N;
+        int n;
 
-    scanf("%d" , &N);
+        scanf("%d" , &n);
 
     int a[N], b[N];
 
