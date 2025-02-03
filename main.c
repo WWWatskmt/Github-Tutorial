@@ -22,12 +22,14 @@ int main()
     }
 
     for(int i=0; i<n; i++){
-        if(a[i] != b[i]){
-            printf("違います");
-            return 0;
+            if(a[i] != b[i]){
+                printf("%d番目が違います\n",i+1);
+                if(i+1 == n){
+                    return 0;
+                }
+            }
         }
-    }
-
+        
     printf("同じです");
 
     return 0;
