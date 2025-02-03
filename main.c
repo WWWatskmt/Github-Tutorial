@@ -1,22 +1,15 @@
-/*
-長さ N の数列 a (a_1, a_2, ..., a_N) と b (b_1, b_2, ..., b_N) が与えられます。
-a の各要素から b の各要素を引いた結果 (a_1 - b_1, a_2 - b_2, ..., a_N - b_N) を、改行区切りで出力してください。
-*/
-
 #include <stdio.h>
 
 int main()
 {
     int n;
-    // int a[n], b[n]; // <- これはC言語では文法エラーです。配列宣言[]の中は定数（数値かdefineで定義した値） 
-    int a[100], b[100];
-
-    scanf("%d",&n);
-
-
+    
+    scanf("%d", &n);
+    
+    int a[n], b[n];
 
     for (int i = 0; i < n; i++) {
-            scanf("%d", &a[i]);
+        scanf("%d", &a[i]);
     }
 
     for (int i = 0; i < n; i++) {
@@ -27,17 +20,18 @@ int main()
     for (int i = 0; i < n; i++) {
         if (a[i] != b[i]) {
             comparison = 0;
-            break;
         }
     }
 
     if (comparison) {
         printf("同じです\n");
     } else {
-        printf("違います\n");
+        for (int i = 0; i < n; i++) {
+            if (a[i] != b[i]) {
+                printf("%d 番目が違います\n", i + 1);
+            }
+        }
     }
-
-    
     
     return 0;
 }
