@@ -8,6 +8,7 @@ a の各要素から b の各要素を引いた結果 (a_1 - b_1, a_2 - b_2, ...
 int main()
 {
     int n;
+    int isDiffrent = 0;
     
     scanf("%d", &n);
 
@@ -22,15 +23,13 @@ int main()
     }
 
     for(int i=0; i<n; i++){
-            if(a[i] != b[i]){
-                printf("%d番目が違います\n",i+1);
-                if(i+1 == n){
-                    return 0;
-                }
-            }
+        if(a[i] != b[i]){
+            printf("%d番目が違います\n",i+1);
+            isDiffrent = 1;
         }
-        
-    printf("同じです");
+    }
+    if(!isDiffrent)
+        printf("同じです");
 
     return 0;
 }
